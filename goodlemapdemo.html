@@ -1,0 +1,45 @@
+<!--use self define tag element to decide the shown_map-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TW's towns</title>
+</head>
+<body>
+	<div id="gmap" style="width:800px;height:600px;"></div>
+
+
+
+	<script>
+	function infomap()
+	{
+		var themap = 
+		{
+			center: new google.maps.LatLng(23.89,120.95),
+			zoom:9,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+			/*
+			panControl:true,
+			zoomControl:true,
+			mapTypeControl:true,
+			scaleControl:true,
+			streetViewControl:true,
+			overviewMapControl:true,
+			rotateControl:true
+			*/
+		};
+		var map = new google.maps.Map(document.getElementById("gmap"),themap);
+	}
+	function backload()
+	{//remind src="XXXXX........ &callback " <== there
+		var toadd = document.createElement("script");
+		toadd.type = "text/javascript";
+		toadd.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=infomap";
+		document.body.appendChild(toadd);
+	}
+	window.onload = backload;
+	</script>
+</body>
+</html>
+
+
+

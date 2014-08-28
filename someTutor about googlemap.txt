@@ -1,0 +1,11 @@
+會回到中心點
+http://www.w3schools.com/googleAPI/tryit.asp?filename=tryhtml_map_marker_pan
+
+畫圖
+多點連線
+http://www.w3schools.com/googleAPI/tryit.asp?filename=tryhtml_map_overlays_polyline
+多邊形
+http://www.w3schools.com/googleAPI/tryit.asp?filename=tryhtml_map_overlays_polygon
+圓
+http://www.w3schools.com/googleAPI/tryit.asp?filename=tryhtml_map_overlays_circle
+
